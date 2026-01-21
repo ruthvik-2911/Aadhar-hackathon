@@ -1,1 +1,8 @@
 Aadhar hackathon
+This project presents an explainable, data driven approach to analyze and predict biometric enrollment stress in Aadhaar services using official datasets provided for the hackathon. The analysis integrates biometric enrollment data and demographic context to identify operational bottlenecks, demographic influence, and regional disparities at the district level.
+
+The methodology begins with large scale data preprocessing and district level aggregation of biometric enrollment attempts. Key operational indicators such as average daily biometric workload, frequency of high load days, and youth participation ratios are derived through feature engineering. These indicators are combined using a weighted aggregation approach to construct an Accessibility Stress Index, which represents the level of enrollment difficulty in each district using a single interpretable score.
+
+Machine learning is then applied using a Random Forest classifier to categorize districts into normal and at risk classes and to validate the relevance of stress related features. Recall is prioritized during evaluation to ensure that all risk prone districts are identified. Feature importance analysis confirms the dominant role of the Accessibility Stress Index, validating the analytical design.
+
+To extend the solution beyond descriptive analysis, a what if simulation framework is implemented to assess how operational improvements could reduce enrollment stress. Before and after comparisons highlight districts that benefit most from targeted intervention. The project delivers actionable insights for proactive planning, efficient resource allocation, and inclusive Aadhaar enrollment management.
